@@ -44,23 +44,17 @@ The data model follows a star schema with two fact tables and shared dimensions.
     - product
     - product family
     
-dim_date is a calendar table used for time intelligence such as YTD and rolling windows.
+- dim_date
+    - calendar date
+    - cear, month, day
+    - YTD and rolling windows
 
 ## Fact Tables
 
 - fact_sales_orders
-    - order-level sales:
-    -   revenue
-    -   quantity
-    -   currency
-    -   order date
+    - order-level sales: revenue, quantity, currency, order date
   
-- fact_production_output
-    - production data
-    - produced units
-    - scrap units
-    - plant
-    - production date
+- fact_production_output: production data, produced units, scrap units, plant, production date
 
 This star schema enables efficient slicing and filtering by time, region, product, and customer.
 
@@ -89,44 +83,44 @@ The dashboard is built on a clean star schema and responds dynamically to slicer
 
 ## How to Run the Project Locally
 
-## Prerequisites
+### Prerequisites
 
 PostgreSQL must be installed and running.
 Python version 3.9 or higher is required.
 Power BI Desktop is required for visualization.
 
-## Clone the Repository
+### Clone the Repository
 
 Clone the repository from GitHub and navigate into the project directory.
 
-## Python Setup
+### Python Setup
 
 Install the required Python packages using the requirements file.
 Create a .env file based on .env.example and provide PostgreSQL connection details.
 
-## Run the Pipeline
+### Run the Pipeline
 
 Execute the pipeline script to load raw data, run SQL transformations, and populate the core schema.
 
-## Power BI
+### Power BI
 
 Connect Power BI to PostgreSQL, load tables from the core schema, create relationships according to the star schema, and open or recreate the dashboard.
 
-## Data Quality and Assumptions
+### Data Quality and Assumptions
 
 Raw input data may contain inconsistent date formats and currencies.
 Data cleaning and normalization are handled during SQL transformations.
 Currency conversion uses a static exchange rate table for demonstration purposes.
 Scrap rate is calculated as a weighted ratio rather than a simple average.
 
-## What This Project Demonstrates
+### What This Project Demonstrates
 
 This project demonstrates end-to-end analytics thinking, separation of raw and transformed data layers, strong SQL and data modeling fundamentals, practical Power BI time intelligence, and business-focused KPI design.
 
-## Possible Next Steps
+### Possible Next Steps
 
 Possible extensions include adding prior-year data for YoY analysis, automating pipeline execution, implementing incremental loads, extending currency handling with historical exchange rates, and deploying the solution to a cloud environment.
 
-## Contact
+### Contact
 
 For questions or feedback, feel free to reach out via GitHub.
