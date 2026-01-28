@@ -1,10 +1,16 @@
-# manufacturing-analytics-pipeline
-This project demonstrates an end-to-end analytics pipeline for a global manufacturing company, covering the full workflow from raw data ingestion to business-ready dashboards.
+# Manufacturing Analytics Pipeline
 
-The goal of this project is to showcase practical skills in data ingestion, SQL-based data modeling, analytics engineering, and business-oriented reporting with Power BI.
+
+End-to-end analytics pipeline for a manufacturing use case: raw ingestion → PostgreSQL (raw/core) → star schema → Power BI dashboard.
+
+**Tech:** PostgreSQL · SQL · Python · Power BI
 
 Dashboard Overview
 ![Dashboard Overview](dashboard_overview.png)
+
+This project demonstrates an end-to-end analytics pipeline for a global manufacturing company, covering the full workflow from raw data ingestion to business-ready dashboards.
+
+The goal of this project is to showcase practical skills in data ingestion, SQL-based data modeling, analytics engineering, and business-oriented reporting with Power BI.
 
 The pipeline processes sales and production data, stores it in PostgreSQL using a star schema, and visualizes key KPIs in an executive dashboard.
 
