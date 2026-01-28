@@ -3,6 +3,8 @@ This project demonstrates an end-to-end analytics pipeline for a global manufact
 
 The goal of this project is to showcase practical skills in data ingestion, SQL-based data modeling, analytics engineering, and business-oriented reporting with Power BI.
 
+Dashboard Overview (see powerbi/dashboard_overview.png)
+
 The pipeline processes sales and production data, stores it in PostgreSQL using a star schema, and visualizes key KPIs in an executive dashboard.
 
 Architecture Overview
@@ -15,6 +17,7 @@ Power BI connects to the core schema and uses a star schema for reporting and ti
 Key design principles are auditability of raw data, reproducible SQL transformations, a clean analytical data model, and centralized time handling via a date dimension.
 
 Data Model (Star Schema)
+The data model follows a star schema with two fact tables and shared dimensions. (see powerbi/data_model.png)
 
 Dimension Tables
 dim_customer contains customer attributes such as region, country, city, and segment.
