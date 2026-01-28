@@ -3,7 +3,8 @@ This project demonstrates an end-to-end analytics pipeline for a global manufact
 
 The goal of this project is to showcase practical skills in data ingestion, SQL-based data modeling, analytics engineering, and business-oriented reporting with Power BI.
 
-Dashboard Overview (see powerbi/dashboard_overview.png)
+Dashboard Overview
+![Dashboard Overview](powerbi/dashboard_overview.png)
 
 The pipeline processes sales and production data, stores it in PostgreSQL using a star schema, and visualizes key KPIs in an executive dashboard.
 
