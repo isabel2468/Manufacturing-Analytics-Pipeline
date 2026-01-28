@@ -51,8 +51,7 @@ The data model follows a star schema with two fact tables and shared dimensions.
 
 ## Fact Tables
 
-- fact_sales_orders
-    - order-level sales: revenue, quantity, currency, order date
+- fact_sales_orders: revenue, quantity, currency, order date
   
 - fact_production_output: production data, produced units, scrap units, plant, production date
 
